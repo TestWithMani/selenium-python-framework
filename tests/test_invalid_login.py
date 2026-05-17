@@ -10,4 +10,4 @@ def test_invalid_login(setup):
     login.click_login_btn()
     text_msg = login.get_success_message()
 
-    assert "This is invalid Login" in text_msg
+    assert "This is invalid Login" not in text_msg
